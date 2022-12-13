@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/classes.css">
+    <link rel="stylesheet" href="/css/hover_card.css">
+
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="title">
+                <h1>Pokédex</h1>
+            </div>
+
+            <form class="search_bar">
+                <input type="search" class="input_search" placeholder="Name or Number" required>
+                <input type="submit" class="submit" value="">
+            </form>
+
+        </header>
+
+        <main>
+
+            <div class="bcg">
+
+                <ul data-js="pokeCards" class="pokeCards">
+
+                </ul>
+               
+                <div class="more">
+                    <button href="" data-js="loadMore">Load More Pokemons</button>
+
+                </div>
+
+                <div class="back">
+                    <img src="/assets/back.png" alt="back">
+                    <button href="" data-js="backButton">BACK</button>
+                </div>
+            </div>
+
+
+        </main>
+
+    </div>
+    </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
