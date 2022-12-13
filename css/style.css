@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'pokemon';
-    src: url('/Webfonts/Pokemon\ Solid.ttf');
+    src: url('Webfonts/Pokemon\ Solid.ttf');
 }
 
 @font-face {
     font-family: 'Flexo';
-    src: url('/Webfonts/Pocket\ Monk.otf');
+    src: url('Webfonts/Pocket\ Monk.otf');
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background: #424242 url(/assets/body_bg.png);
+    background: #424242 url(assets/body_bg.png);
 
 }
 
