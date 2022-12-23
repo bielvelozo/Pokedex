@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'pokemon';
-    src: url('/Webfonts/Pokemon\ Solid.ttf');
+    src: url('Webfonts/Pokesolid.ttf');
 }
 
 @font-face {
     font-family: 'Flexo';
-    src: url('/Webfonts/Pocket\ Monk.otf');
+    src: url('Webfonts/Flexo-CapsDEMO-webfont.woff');
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background: #424242 url(/assets/body_bg.png);
+    background: #424242 url('assets/body_bg.png');
 
 }
 
@@ -36,8 +36,8 @@ header {
 }
 
 .submit {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
 
     background-image: url('https://assets.pokemon.com/static2/_ui/img/chrome/forms/input-search-bg.png');
     background-position: center;
@@ -61,9 +61,9 @@ header {
 }
 
 .input_search {
-    min-width: 35%;
-    height: 40px;
-    padding: 10px;
+    min-width: 40%;
+    height: 45%;
+    padding: 10px 20px;
 
 
     border-radius: 40px;
@@ -71,6 +71,9 @@ header {
     border: none;
     appearance: none;
     outline: none;
+
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .title {
@@ -93,7 +96,7 @@ header {
     
 
     color: #FFDE00;
-    font-size: clamp(3rem, 5.5vw, 6rem);
+    font-size: clamp(5rem, 8vw, 8rem);
 
     -webkit-text-stroke-width: 0.12rem;
     -webkit-text-stroke-color: #3B4CCA;
@@ -142,7 +145,8 @@ main {
 
 }
 
-main .more {
+
+ .more {
     display: block;
     text-align: center;
 
@@ -159,6 +163,7 @@ main .more {
     font-size: 14px;
 
     border-radius: 5px;
+    cursor: pointer;
 
 
 }
@@ -171,7 +176,7 @@ main .more {
 
 .card {
 
-
+    
     list-style: none;
     position: relative;
     border-radius: 5px;
@@ -179,18 +184,16 @@ main .more {
 
 }
 
+.card a {
+
+    text-decoration: none;
+}
 
 
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 1280px;
-    height: 100%;
 
-
-    background: #fff;
+.card:hover {
+    top: -4px;
+    transition: all .2s ease-in-out;
 }
 
 .padCard {
@@ -240,8 +243,9 @@ main .more {
 .back {
     width: 69px;
     cursor: pointer;
-    margin-left: 1rem;
+    margin: 1rem ;
     display: none;
+    
 }
 
 .back img {
@@ -255,4 +259,57 @@ main .more {
     color: black;
     font-weight: 600;
     cursor: pointer;
+    font-size: clamp(1rem, 0.8vw, 3.2rem);
+}
+.notFound {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+
+.notFound img {
+    width: 10%;
+}
+
+
+.notFound h1 {
+    font-family: 'Flexo';
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    padding:  0 10px;
+}
+
+@media (max-width:1050px) {
+    main {
+        width: 90%;
+    }
+    .notFound{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .notFound img {
+        width: 20%;
+        margin-top:10px ;
+        
+    }
+}
+
+
+@media (max-width:470px) {
+    .div-img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .card-img {
+        width: 220px;
+    }
+
+
+
+
 }

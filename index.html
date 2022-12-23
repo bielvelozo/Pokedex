@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/classes.css">
-    <link rel="stylesheet" href="/css/hover_card.css">
+    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="css/hover_card.css">
 
     <title>Pokedex</title>
 </head>
 
 <body>
     <div class="container">
-
+        
         <header>
             <div class="title">
                 <h1>Pokédex</h1>
@@ -30,6 +30,10 @@
         <main>
 
             <div class="bcg">
+                <div class="back">
+                    <img src="css/assets/back.png" alt="back">
+                    <button href="" data-js="backButton">BACK</button>
+                </div>
 
                 <ul data-js="pokeCards" class="pokeCards">
 
@@ -40,9 +44,11 @@
 
                 </div>
 
-                <div class="back">
-                    <img src="/assets/back.png" alt="back">
-                    <button href="" data-js="backButton">BACK</button>
+
+                <div class="notFound">
+                    <h1>No Pokemon Matched You Search!</h1>
+                    <img src="https://assets.pokemon.com/static2/_ui/img/global/psyduck.png" alt="Psyduck">
+                   
                 </div>
             </div>
 
@@ -54,7 +60,7 @@
 
     </div>
 
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
