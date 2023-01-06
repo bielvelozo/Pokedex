@@ -1,0 +1,171 @@
+.pokeInfo {
+    text-align: center;
+    
+}
+
+.pokeInfo h1 {
+    font-size: clamp(0.5rem , 7vw , 2.6rem);
+}
+.pokeInfo img {
+    width: 50%;
+}
+.description {
+    margin: 10px 0;
+    color: rgb(57, 57, 57);
+}
+
+.typesInfo {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+    
+}
+
+.typesInfo div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 6px;
+}
+
+
+
+.typesInfo h3 {
+    font-size: 1em;
+}
+
+.infoContainer {
+    width: 50%;
+    min-height: 243px;
+    background-color: #30a7d7;
+    border-radius: 10px;
+    margin: 0 auto;
+
+}
+
+.infos{
+    
+    float: left;
+    color: #fff;
+    width: 49.22%;
+   
+}
+
+.infos ul {
+  
+    display: flex;
+    flex-flow: wrap column;
+    min-height: 243px;
+    justify-content: space-around;
+    align-items: center;
+    
+    list-style: none;
+    text-align: justify;
+}
+
+.infos li {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.atr-title {
+    font-size: 0.9em;
+}
+
+.atr-value{
+  color: #000;
+
+}
+
+.graphic {
+    margin: 10px auto 0;
+    position: relative;
+    background-color: #a4a4a4;
+    width: 55%;
+    min-height: 276px; 
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.graphic h3 {
+    padding: 0.75em 1.5em 0;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.graphicContainer {
+    width: 100%;
+    position: absolute;
+    bottom:  10px;
+
+    
+}
+
+.graphic ul {
+    padding: 5px;
+
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    justify-content: center;
+    text-align: center;
+
+}
+.graphic li {
+    width: 10%;
+    font-size: 62.5%;
+    font-weight: bold;
+    
+}
+
+.maxValue {
+    background-color: #979595;
+
+    width: 100%;
+    height: 180px;
+
+    margin-right:10px ;
+    border-radius: 2px;
+    
+    position: relative;
+
+}
+
+.value {
+    background-color: #30a7d7;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+@media(max-width:560px) {
+    .infoContainer {
+        width: 75%;
+        
+    }
+
+    .graphic {
+        width: 90%;
+        
+    }
+    
+    .graphic ul {
+        gap: 10px;
+    }
+
+    .graphic li {
+        width: 13%;
+        font-size: 62.5%;
+        font-weight: bold;
+        
+    }
+
+
+    .pokeInfo img {
+        width: 70%;
+    }
+}

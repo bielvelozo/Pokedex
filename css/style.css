@@ -19,6 +19,7 @@ html {
 
 body {
     background: #424242 url('assets/body_bg.png');
+    font-family: 'Flexo';
 
 }
 
@@ -147,8 +148,9 @@ main {
 
 
  .more {
-    display: block;
+    display: none;
     text-align: center;
+   
 
 }
 
@@ -226,7 +228,7 @@ main {
 .card-title {
 
     font-weight: 200;
-    font-size: 145%;
+    font-size: clamp(0.8rem , 7vw , 1.1rem);
     color: #313131;
     margin: 11px 0 5px 0;
 
@@ -245,6 +247,7 @@ main {
     cursor: pointer;
     margin: 1rem ;
     display: none;
+  
     
 }
 
@@ -280,6 +283,25 @@ main {
     font-family: 'Flexo';
     font-size: clamp(1.5rem, 2vw, 4rem);
     padding:  0 10px;
+}
+
+.load {
+    text-align: center;
+
+}
+.load img {
+    width: 5%;
+    animation: loading 1s linear infinite;
+
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @media (max-width:1050px) {

@@ -11,10 +11,12 @@
   //html elements
   const $pokeCards = document.querySelector('[data-js="pokeCards"')
   const $loadPoke = document.querySelector('[data-js="loadMore"')
+  const $divLoadPoke = document.querySelector('.more')
   const $form = document.querySelector('.search_bar')
   const $input = document.querySelector('.input_search')
   const $btnBack = document.querySelector('.back')
   const $notFound = document.querySelector('.notFound')
+  const $load = document.querySelector('.load')
 
   //values
 
@@ -71,6 +73,8 @@
     }, '')
 
     $pokeCards.innerHTML = pokeLi
+    $divLoadPoke.style.display = 'block'
+    $load.style.display = 'none'
 
 
   }
@@ -123,11 +127,11 @@
         $notFound.style.display = 'none'
       }
 
-      console.log(pokeCache.length)
+      
       createPokeLi()
       
 
-      $loadPoke.style.display = 'none'
+      $loadPoke.style.visibility = 'hidden'
       $btnBack.style.display = 'flex'
 
     })
